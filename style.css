@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Inter", sans-serif;
     font-family: "Ubuntu", sans-serif;
@@ -69,6 +73,7 @@ body {
 a {
     text-decoration: none;
     color: #07040C;
+   
 }
 
 a:hover {
@@ -87,6 +92,10 @@ a:hover {
     font-weight: 500;
    
 }
+
+
+
+
 
 .nav_button {
     display: flex;
@@ -449,32 +458,40 @@ a:hover {
     justify-content: center;
     align-items: center;
     transition: all 0.5s ease;
-    
+    position: relative;
     
 }
 
 .video_border:hover {
     border: 2px dashed #F35A05;
-    
 }
 
 .phone {
     display: block;
-    position: absolute;
+    
     z-index: -5;
+
+    border-radius: 15px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 15%);
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 .phone_color {
     background: rgba(0, 0, 0, 0.15);
     border-radius: 15px;
     transition: all 0.5s ease;
-    
-    
+    position: relative;
+   
 }
 
 .phone_color:hover {
     background: rgba(0, 0, 0, 0);
 }
+
+
+
 
 .modal {
     position: fixed;
@@ -508,28 +525,13 @@ a:hover {
 }
 
 .modal__close-btn:hover svg path {
-    fill: #F35A05;
+    fill: #060606;
 }
 
 
 .modal.open {
     visibility: visible;
     opacity: 1;
-}
-
-
-
-
-
-
-
- .phone {
-    border-radius: 15px;
-   box-shadow: 0 8px 40px rgba(0, 0, 0, 15%);
-   width: 100%;
-   height: 100%;
-   position: relative;
-
 }
 
 
@@ -544,7 +546,10 @@ a:hover {
     cursor: pointer;
     z-index: 2;   
     display: inline-block;
-
+    left: 50%;
+    top: 50%;
+    margin-left: -24px;
+    margin-top: -25px;
 }
 
 
@@ -955,4 +960,5 @@ a:hover {
     color: #F35A05;
     transition: 0.5s ease;
 }
+
 

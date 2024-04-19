@@ -35,3 +35,26 @@ document.getElementById("my-modal").addEventListener('click', event => {
 });
 
 
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+  
+      const target = document.querySelector(this.getAttribute('href'));
+  
+      if (target) {
+        const targetTop = target.getBoundingClientRect().top + window.pageYOffset;
+        window.scrollTo({
+          top: targetTop,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+  
+
+
+  document.getElementById("registration").addEventListener("click", function() {
+    document.getElementById("reg-modal").classList.add("openreg")
+})
+
