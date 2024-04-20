@@ -26,7 +26,7 @@ window.addEventListener('keydown', (e) => {
 });
 
 // Закрыть модальное окно при клике вне его
-document.querySelector("#my-modal .modal__box").addEventListener('click', event => {
+/*/  document.querySelector("#my-modal .modal__box").addEventListener('click', event => {
     event._isClickWithInModal = true;
 });
 document.getElementById("my-modal").addEventListener('click', event => {
@@ -34,9 +34,9 @@ document.getElementById("my-modal").addEventListener('click', event => {
     event.currentTarget.classList.remove('open');
 });
 
+/*/
 
-
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+document.querySelectorAll('a.scroll[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
   
@@ -55,6 +55,29 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
   document.getElementById("registration").addEventListener("click", function() {
-    document.getElementById("reg-modal").classList.add("openreg")
+    document.getElementById("reg-modal").classList.add("ok")
+})
+
+
+window.addEventListener('keydown', (e) => {
+    if (e.key === "Escape") {
+        document.getElementById("reg-modal").classList.remove("ok")
+    }
+});
+
+
+document.getElementById("close-reg").addEventListener("click", function() {
+    document.getElementById("reg-modal").classList.remove("ok")
+})
+
+
+
+document.getElementById("registrationtwo").addEventListener("click", function() {
+    document.getElementById("reg-modal").classList.add("ok")
+})
+
+
+document.getElementById("registrationthree").addEventListener("click", function() {
+    document.getElementById("reg-modal").classList.add("ok")
 })
 
