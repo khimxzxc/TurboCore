@@ -59,7 +59,7 @@
                                <div class="regbtn" id="reg-btn">
                                 ВЫСЛАТЬ ПАРОЛЬ
                                </div>  
-                             <div class="neregbtn">
+                             <div class="neregbtn" id="neregbtn">
                                 Я уже зарегистрирован
                              </div>     
                           </div>
@@ -67,20 +67,37 @@
                         </div>
                 </div>
                     
-                    
-
-
-
-
-
-
-
-
-
-
-
-
-
+                    <div class="vhod_modal" id="vhod-modal">
+                        <div class="vhod_box">
+                            <img src="image/regclose.svg" alt="" id="close-vhod" class="close_vhod">
+                            
+                            <div class="reg_title">
+                                ВХОД
+                              </div>
+                              <div class="border_reg vhod_reg" >
+                                <p>
+                                    Ваш логин
+                                </p>
+                                    <input type="text" name="nickname" placeholder="nickname" class="reg_input" autocomplete="off" >
+                                    <span>*введите никнейм без @</span>
+                                    
+                                <p>Пароль</p>
+                                <input type="password" class="reg_input vhod_input" name="password" placeholder="password" autocomplete="off">
+                                <div class="me">
+                                    <p>Запомнить меня</p>
+                                    <a href="#">Забыли пароль</a>
+                                </div>
+                                <div class="regbtn vhodbtn" id="vhod-btn">
+                                    Войти
+                                   </div> 
+                                   <a href="#" class="goreg" id="goreg">Зарегистрироваться</a>
+                              </div>
+                              
+                              <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes">
+                                <label for="happy"></label>
+                             
+                        </div>
+                    </div>
 
             </div>
         </div>

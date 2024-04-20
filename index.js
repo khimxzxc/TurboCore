@@ -70,6 +70,13 @@ document.getElementById("close-reg").addEventListener("click", function() {
     document.getElementById("reg-modal").classList.remove("ok")
 })
 
+document.getElementById("reg-btn").addEventListener("click", function() {
+    document.getElementById("vhod-modal").classList.add("no")
+})
+
+document.getElementById("reg-btn").addEventListener("click", function() {
+    document.getElementById("reg-modal").classList.remove("ok")
+})
 
 
 document.getElementById("registrationtwo").addEventListener("click", function() {
@@ -81,3 +88,42 @@ document.getElementById("registrationthree").addEventListener("click", function(
     document.getElementById("reg-modal").classList.add("ok")
 })
 
+document.getElementById("vhod").addEventListener("click", function() {
+    document.getElementById("vhod-modal").classList.add("no")
+})
+
+
+window.addEventListener('keydown', (e) => {
+    if (e.key === "Escape") {
+        document.getElementById("vhod-modal").classList.remove("no")
+    }
+});
+
+
+document.getElementById("close-vhod").addEventListener("click", function() {
+    document.getElementById("vhod-modal").classList.remove("no")
+})
+
+
+
+document.getElementById("neregbtn").addEventListener("click", function() {
+    document.getElementById("vhod-modal").classList.add("no")
+})
+
+document.getElementById("neregbtn").addEventListener("click", function() {
+    document.getElementById("reg-modal").classList.remove("ok")
+})
+
+
+document.getElementById("goreg").addEventListener("click", function() {
+    document.getElementById("reg-modal").classList.add("ok")
+})
+
+document.getElementById("goreg").addEventListener("click", function() {
+    document.getElementById("vhod-modal").classList.remove("no")
+})
+
+
+document.getElementById("vhod-btn").addEventListener("click", function() {
+    document.getElementById("vhod-modal").classList.remove("no")
+})
